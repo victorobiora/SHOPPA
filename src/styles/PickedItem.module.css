@@ -1,0 +1,46 @@
+.container {
+    padding-left: 33%;
+    margin-bottom: 2.5rem;
+}
+
+.pickedItemImage {
+    padding: 3rem;
+    padding-left: 0;
+    width: 25rem;
+    height: 25rem;
+}
+
+.pickedItemImage img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.pickedItemDetails {
+   display: flex;
+   flex-direction: column;
+}
+
+h1{
+    margin-bottom: 0.4rem;
+}
+
+h2{
+    margin: 0;
+}
+
+.addCart {
+    width: 20%;
+    position: relative;
+    left: 10%;
+    height: 2rem;
+    margin-top: 1rem;
+    background-color: rgb(66, 61, 61);
+    color: beige;
+    border-radius: 0.6rem;
+    cursor: pointer;
+}
+
+.itemText {
+    color: rgb(88, 88, 88);  
+}

@@ -1,0 +1,23 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(15, 13, 13);
+  
+    padding: 1rem;
+}
+
+a {
+    color: beige;
+    text-decoration: none;
+}
+
+.deets {
+    display: flex;
+    flex-direction: row;
+}
+
+.deets a {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 2rem;
+}

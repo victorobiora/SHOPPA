@@ -1,0 +1,14 @@
+.itemsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+}
+
