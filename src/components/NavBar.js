@@ -1,4 +1,5 @@
 import classes from '../styles/NavBar.module.css'
+import cart from '../styles/shopping-cart.png'
 
 const NavBar = props => {
     return <div className={classes.nav}>
@@ -8,7 +9,9 @@ const NavBar = props => {
           <div className={classes.deets}>
           <a href="/"> NewsLetter </a>
           <a href="/"> Login </a>
-          <a href="/"> About Us </a>
+         <div className={classes.cartContainer}>
+            <img src={cart} alt='cart'/>
+            </div>
           </div>
     </div>
 }

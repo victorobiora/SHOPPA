@@ -1,33 +1,48 @@
-import { imgLink } from "./ItemData";
 import classes from "../styles/PickedItem.module.css";
+import { fetchObject } from "../store/getToken";
+import { useLoaderData } from "react-router-dom";
 
 const PickedItem = (props) => {
+  const item = useLoaderData();
+  console.log(item);
   return (
     <div>
       <div className={classes.container}>
         <section className={classes.pickedItemImage}>
-          <img src={imgLink} alt="pickedItem" />
+          <img src={item.image.imageUrl} alt="pickedItem" />
         </section>
 
         <section className={classes.pickedItemDetails}>
           <div>
-            <h1> iPhone 12</h1>
+            <h1>{item.title}</h1>
           </div>
-          <div>****</div>
+          <div>{item.condition}</div>
           <div>
-            <h2>$32.00</h2>
+            <h2>${item.price.value}</h2>
           </div>
-          <button className={classes.addCart}> Add to Cart + </button>
         </section>
       </div>
-      <section className={classes.itemText}>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod nisi
-        aliquam a repellendus tempore ab consequuntur itaque qui. Error, dolore.
-        Commodi enim vitae veniam, aperiam vero illo corporis error
-        perspiciatis.
-      </section>
+      <section className={classes.itemText}>{item.shortDescription}</section>
+      <button className={classes.addCart}> Add to Cart + </button>
     </div>
   );
 };
 
 export default PickedItem;
+
+export const loader = async ({ request, params }) => {
+  const id = params.pickedProduct;
+
+  const getItem = await fetch(
+    `https://api.ebay.com/buy/browse/v1/item/${id}`,
+    fetchObject
+  );
+
+  if (!getItem.ok) {
+    console.log("I didnt get the item");
+  }
+
+  const item = await getItem.json();
+
+  return item;
+};

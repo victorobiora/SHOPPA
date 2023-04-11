@@ -3,7 +3,7 @@ import PicCarousel from "../components/PicCarousel";
 import SearchData from "../components/SearchData";
 
 const IndexDisplay = props => {
-    /*  */
+
    return <Fragment>  
       <PicCarousel/>
       <SearchData/>

@@ -14,10 +14,21 @@ a {
 .deets {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+   
 }
 
-.deets a {
-    display: flex;
-    justify-content: space-evenly;
+.deets a,.deets div {
     margin: 0 2rem;
+}
+
+.cartContainer {
+    height: 1.5rem;
+    width: 2rem;
+    cursor: pointer;
+}
+
+.cartContainer img {
+    height: 100%;
+    width: 100%;
 }
