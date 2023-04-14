@@ -1,16 +1,16 @@
- const getToken = () => {
-//Until i figure out a way to retrieve token requests with cors turned off, I will
-//just return the token gotten live from developer ebay website
-   return 'v^1.1#i^1#f^0#r^0#p^1#I^3#t^H4sIAAAAAAAAAOVYbWwURRi+a6+FikVisUCD8VwwJpLbm/24r4U7cm0pvVK4a+9a5bTC3u5cu+3d7rEz2/YgxKMRIihERIX6ERslRo1KosQgMZAiMbGm/BAlRgmkKoJG/WXSPwTd3R6lrYSvXmIT789l3nnnned55n1nZgfkSsse2VG/Y7TcOqtoIAdyRVYrNQeUlZYsm1tcVFViARMcrAO5pTlbX/GlFYhPpzJcM0QZRUbQ3ptOyYgzjX5CU2VO4ZGEOJlPQ8RhgYsG1zZyNAm4jKpgRVBShD1U6ycYj9sNaOj1+QTawwBat8pXY8YUvV/0QJ+XoQELgJvhGb0fIQ2GZIR5GfsJGtCMA7AOiorRNMe6OJoiWcDECXsrVJGkyLoLCYiACZczx6oTsN4YKo8QVLEehAiEgnXRcDBUu2pdbIVzQqxAXoco5rGGJrdqFBHaW/mUBm88DTK9uagmCBAhwhkYm2FyUC54FcwdwDelTngSHhdIujwuN2DdPqogUtYpaprHN8ZhWCTRkTRdOShjCWdvpqiuRqITCjjfWqeHCNXajb8mjU9JSQmqfmJVdXB9MBIhAq2SgBU1nHBE68ORSNARaa51AIZPiAIUKIc7IbKCj/HkpxmLlRd5yjw1iixKhmTIvk7B1VDHDKcqw0xQRncKy2E1mMQGnnE/OgZAXkGGdcWNJR1bQw13yMaqwrQug91s3lz/8dEYq1JCw3A8wtQOUyA/wWcykkhM7TQzMZ88vchPdGCc4ZzOnp4esochFbXdSQNAOR9b2xgVOmCaJ0xfo9YNf+nmAxySSUWA+kgkcTib0bH06pmqA5DbiQDrYVnal9d9MqzAVOu/DBM4OyfXQ6HqgwcJF8/wXlqE3iQEBdlqAvkUdRo4YILPOtK82gVxJsUL0CHoeaaloSqJelIlaUaf1iG6fUkH60smHQmX6HZQSQgBhImE4PP+f8rkVhM9CgUV4gJleoGyPNHZFPUGG3E9ru6s6VpdF1/W0FDTsqnb19SxJo6CTrURJFvi1Xw40uS/1Vq4LvmalKQrE9PnL5QARq0XRoR6BWEoToteVFAyMKKkJCE7sxaYUcUIr+JsFKZSumFaJIOZTKhQO3WB6N3WJnFnrAt5Pv0nZ9N1WSEjYWcWK2M80gPwGYk0Th9SUNJOhdevHU6j1nXzBhP1tHhL+p11RrHWSY6xlcSxyyZpUiZRt0CqECmaqt+zybBx+4opXVDWTzOsKqkUVFupaVdzOq1hPpGCM62sC5DgEj/DjlrK7aVoF0PR01s2wTxIN8y0LalwG7Ft5W1eqJ2TP+4DFvNH9VlPgD7rsSKrFawAD1FLwIOlxS224rurkIQhKfFJEkntsv7NqkKyC2YzvKQWVVhGwcVXhd/r393VdaVn0y/Lt1omvi0MtIGF468LZcXUnAlPDWDxtZ4S6p4F5TQDWIqiadZFU3Gw5Fqvjaq0zf9t9wa85QI78vmu0o6nlS3neg8cHATl405Wa4nF1me1PNGf6kbLy52jrG13bMhHnyK+OvnS7PhnnwzaD394vrj/jZVDjTte/7vhHCc0Xeke2TNy+Wjum+a6b/sH+3O+/WueoQ4eWuDfV6G2nll0fOQC8zF5tuNC7Mi9721b9U6zTev9dahSHJ53aefRnzoX7ju2+iPqR999+9GX6qPzo6eG17DLNmpPPvyBxh34YuWfnx7ce2TJyXnP3jV0/NybePv3J9Z3n9wY4l+5v/GFwStto+9vO/9aHM+tC1pbG2PPD29WKqraL5cQs7f+cGjRnLXK2co9S8m924b/2v7z4a42dflbb8+K9j2lPf7yxZHNpy0vfvf1zpa2BxZkL/1RNlC5ZbGl4rnTdfOrajedGVvLfwBQ/Nsc9REAAA=='
-}
-export default getToken
+const getToken = () => {
+  //Until i figure out a way to retrieve token requests with cors turned off, I will
+  //just return the token gotten live from developer ebay website
+  return 'v^1.1#i^1#p^1#r^0#I^3#f^0#t^H4sIAAAAAAAAAOVYa2wUVRTeR1tssCipQSUK61SiEWf2zux0HwO7um0pLfSxZbdFGhFm7txph92dWebepa1g0jRCfMVI8AFiQgOJEYsYBX8QCAaqRENU1EhUIiQC1URqTNRgUMGZ3aVsK+HVTWzi/tnMueee+33fPee+QG9J6QPr6tadLbNPcvT3gl6H3c5OBqUlxbOnOB3Ti20gz8He33tvb1Gf88e5WEwmUsIihFO6hpGrO5nQsJAxBqm0oQm6iFUsaGISYYFAIRpubBA4BggpQyc61BOUq74mSMFKXpICgPMEWJYPeKFp1S7GjOlBCrFcwC/6WOALeHip0mu2Y5xG9RomokaCFGd2pQFPs3yM9QksEHjAeDlvO+VqQwZWdc10YQAVysAVMn2NPKxXhipijAxiBqFC9eHaaHO4vmZeU2yuOy9WKKdDlIgkjUd/VesycrWJiTS68jA44y1E0xAijCl3KDvC6KBC+CKYG4CflZrz+iArAihD6PEqoCBS1upGUiRXxmFZVJlWMq4C0ohKeq6mqKmGtAJBkvtqMkPU17isv5a0mFAVFRlBal5VeEk4EqFCbSokutEs0dG65kgkTEcW1dDAI0oyRJClvZLMw4DHlxsmGysn8phxqnVNVi3JsKtJJ1XIxIzGKgPylDGdmrVmI6wQC0++X2BEQa7dmtLsHKZJp2bNKkqaMrgyn1fXf6Q3IYYqpQkaiTC2ISNQkBJTKVWmxjZmMjGXPN04SHUSkhLc7q6uLqbLw+hGh5sDgHU/0tgQhZ0oKVIZX6vWLX/16h1oNUMFIrMnVgXSkzKxdJuZagLQOqgQ7+N5LpDTfTSs0Fjrvwx5nN2j66FQ9VHp5wD0iJzik72iX1EKUR+hXIq6LRxIEnvopGjEEUklRIhoaOZZOokMVRY8lQrn8SuIlr0BheYDikJLlbKXZhWEAEKSBAP+/0+ZXGuiRxE0EClQphcoy6UVLVF/uIHUkaoV1fH5te2zFyyobl25KtDSubAdh91GA1Ba26vE5khL8Fpr4bLkqxOqqUzMHL9QAli1XhgR6nRMkDwuelGop1BET6iwZ2JNsMeQI6JBeqIokTAN4yIZTqXqC7VSF4jedS0SN8a6kPvTf7I3XZYVthJ2YrGy+mMzgJhSGWv3YaCedOuieexwW7VumpdlUI+Lt2qeWScUa5Nklq0qZw+bTIYyg1dBxkBYTxvmOZtptk5fMT2ONHM3I4aeSCCjjR13NSeTaSJKCTTRyroACa6KE2yrZb1+89LIcTwYFy+Y2UiXTbQlqXALcdFD13mgdo++3IdsmR/bZz8I+uz7HXY7mAtmsRXgnhJna5Hz5ulYJYhRRYXBaodm3lkNxMRRT0pUDUe57Sz4YTM8U7f9mfj5rpVDc56w5b8t9C8Fd4y8LpQ62cl5Tw3grkstxewtt5dxHsCzPOtjAQ/aQcWl1iJ2WtFt+7s3VOz+uvrXP9ZEO17YfnTP98PvbwNlI052e7GtqM9uK1888ziz5O3Gl/fecvf8GasfI+cv7F6efO+XhtrV5cF9h52vDB567kBsT+rOR+f8bVSuXto6GzStLb3/zyPTYzu3Fj955qP08TXrj57dcdMB567Q1K9OPv3Syl0dyqQh9dujPadr/9pYY3v4p4UzPugYLHF8qt3381D03PDCT8JNe+XGXdtmss6BpWs/xA77a5/Zt7wzHJq6cbjCtvXcmqFTbWVb4kdObvl98NUz/JcXnv94A+RnFh17qm2e9vjAlBPHD/3ms0V2vBV68NR3sxLrN71x67TX3x3YeLC8ZPHmnTuPDNqPbcK0ynCnn12wfPeJ9GFHx9o6WNHdvfebFz9fdiJ+WqIGvuhn1H1vcouyc/kPmUXyHvURAAA=';
+};
+export default getToken;
 
 export const fetchObject = {
-   headers: {
-     "Content-Type": "application/json",
-     Authorization: `Bearer ${getToken()}`,
-     "X-EBAY-C-MARKETPLACE-ID": "EBAY_US",
-     "X-EBAY-C-ENDUSERCTX":
-       "affiliateCampaignId=<ePNCampaignId>,affiliateReferenceId=<referenceId></referenceId>",
-   },
- }
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: `Bearer ${getToken()}`,
+    "X-EBAY-C-MARKETPLACE-ID": "EBAY_US",
+    "X-EBAY-C-ENDUSERCTX":
+      "affiliateCampaignId=<ePNCampaignId>,affiliateReferenceId=<referenceId></referenceId>",
+  },
+};

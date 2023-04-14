@@ -1,12 +1,24 @@
 .container {
     margin: 1.7rem;
     display: flex;
-    flex-wrap: wrap;
-    width: 7.1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 10rem;
     border: none;
     border-radius: 0.6rem;
     color: black;
+    cursor: default;
+   
 }
+
+.itemContainer {
+   color: black;
+}
+
+.container:hover {
+   background-color: rgb(60, 131, 107);
+}
+
 
 .image {
    height: 11rem;
@@ -31,9 +43,35 @@
 margin: 0.7rem;
 }
 
-.addToCart {
-   position: relative;
-   right: 0;
-   width: 1rem;
-   display: inline-block;
+
+.addcartContainer {
+   display: none;
+   border-radius: 0.6rem;
+   background-color: black;
+   padding-top: 0.1rem;
+   width: 100%;
+   height: 10%;
+   cursor: pointer;
+}
+
+.container:hover .addcartContainer {
+   display: flex;
+}
+
+
+.addcartContainer h4 {
+   margin: 0;
+   color: azure;
+}
+
+.addcart {
+   height: 1.5rem;
+   width: 1.5rem;
+   margin-right: 0.3rem;
+  
+}
+
+.addcart img {
+   height: 100%;
+   width: 100%;
 }

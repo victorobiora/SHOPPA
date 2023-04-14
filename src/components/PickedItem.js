@@ -4,7 +4,7 @@ import { useLoaderData } from "react-router-dom";
 
 const PickedItem = (props) => {
   const item = useLoaderData();
-  console.log(item);
+
   return (
     <div>
       <div className={classes.container}>

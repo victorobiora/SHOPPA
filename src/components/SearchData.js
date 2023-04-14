@@ -9,7 +9,6 @@ import ItemData from "./ItemData";
 const SearchData = (props) => {
   const submit = useSubmit();
   const searchActionData = useActionData();
-  console.log(searchActionData);
   const [searchQuery, setSearchQuery] = useState("");
   const [isEmpty, SetIsEmpty] = useState(null);
   const className = `${classes.categoriesList} ${classes.addWidth}`
@@ -51,10 +50,11 @@ const SearchData = (props) => {
         </div>
         <button onClick={searchHandler}> search</button>
       </Form>
-      <h2 className={classes.categoriesText}>
-        {" "}
-        Search through our Popular categories
-      </h2>
+      <div className={classes.categoriesText}>
+        <h2>
+         Search through our Popular categories 
+        </h2>
+      </div>
       {!searchActionData && (
         <section className={classes.categoriesList}>
           {initialCatList.map((el) => (

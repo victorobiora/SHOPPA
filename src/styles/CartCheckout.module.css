@@ -1,0 +1,28 @@
+.checkoutContainer {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.cartTotal {
+    width: 30%;
+}
+
+.cartTotal h4 {
+    margin: 0;
+}
+
+.buttons {
+  display: flex;
+  width: 40%;
+}
+.checkOutButton {
+   width: 70%;
+   height: 3rem;
+   background-color: rgb(4, 77, 4);
+}
+
+.clearCartButton {
+   width: 30%;
+   height: 3rem;
+}

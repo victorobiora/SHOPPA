@@ -1,12 +1,9 @@
 import getToken from "../store/getToken";
-import { useLoaderData, useNavigation } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import ItemData from "../components/ItemData";
 
 const ProductsList = (props) => {
-  const navigationState = useNavigation()
   const productData = useLoaderData();
-
-  console.log(navigationState)
 
   return (
     <section
@@ -53,8 +50,7 @@ export const ProductsListLoader = async ({ request, params }) => {
     }
     return productPrice;
   };
-  console.log(setPriceRangs(params.productsList));
-
+ 
   const requestP = await fetch(
     `https://api.ebay.com/buy/browse/v1/item_summary/search?q=${
       params.productsList
