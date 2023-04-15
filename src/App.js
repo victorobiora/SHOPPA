@@ -5,6 +5,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { RouterProvider } from "react-router-dom";
 import Overlay from "./pages/Overlay";
 import Product from "./pages/product";
+import ErrorPage from "./pages/ErrorPage";
 import { ProductsListLoader } from "./pages/ProductsList";
 import { loader as productLoader } from "./components/PickedItem";
 import { searchAction } from "./components/SearchData";
@@ -15,6 +16,7 @@ function App() {
     {
       path: "/",
       element: <Overlay />,
+      errorElement: <ErrorPage/>,
       children: [
         { index: true, element: <IndexDisplay />, action: searchAction },
         {

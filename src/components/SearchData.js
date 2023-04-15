@@ -1,7 +1,7 @@
 import ProductCategories from "./ProductCategories";
 import classes from "../styles/SearchData.module.css";
 import { initialCatList } from "../store/initialCatList";
-import { useActionData, useSubmit, Form } from "react-router-dom";
+import { useActionData, useSubmit, Form, json } from "react-router-dom";
 import { useState } from "react";
 import { fetchObject } from "../store/getToken";
 import ItemData from "./ItemData";
@@ -11,7 +11,7 @@ const SearchData = (props) => {
   const searchActionData = useActionData();
   const [searchQuery, setSearchQuery] = useState("");
   const [isEmpty, SetIsEmpty] = useState(null);
-  const className = `${classes.categoriesList} ${classes.addWidth}`
+  const className = `${classes.categoriesList} ${classes.addWidth}`;
   const updateSearchQuery = (e) => {
     setSearchQuery(e.target.value);
   };
@@ -51,9 +51,7 @@ const SearchData = (props) => {
         <button onClick={searchHandler}> search</button>
       </Form>
       <div className={classes.categoriesText}>
-        <h2>
-         Search through our Popular categories 
-        </h2>
+        <h2>Search through our Popular categories</h2>
       </div>
       {!searchActionData && (
         <section className={classes.categoriesList}>
@@ -62,17 +60,19 @@ const SearchData = (props) => {
           ))}
         </section>
       )}
-      {searchActionData && <section className={className}>
-      {searchActionData.map((el) => (
-        <ItemData
-          key={el.itemId}
-          image={el.image.imageUrl}
-          price={el.price.value}
-          name={el.title}
-          id = {el.itemId}
-        />
-      ))}
-        </section>}
+      {searchActionData && (
+        <section className={className}>
+          {searchActionData.map((el) => (
+            <ItemData
+              key={el.itemId}
+              image={el.image.imageUrl}
+              price={el.price.value}
+              name={el.title}
+              id={el.itemId}
+            />
+          ))}
+        </section>
+      )}
     </>
   );
 };
@@ -91,7 +91,7 @@ export const searchAction = async ({ request, params }) => {
   );
 
   if (!getItem.ok) {
-    console.log("I didnt get the item");
+    throw json({errorCode: getItem.status});
   }
 
   const item = await getItem.json();

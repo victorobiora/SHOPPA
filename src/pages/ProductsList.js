@@ -1,5 +1,5 @@
 import getToken from "../store/getToken";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, json } from "react-router-dom";
 import ItemData from "../components/ItemData";
 
 const ProductsList = (props) => {
@@ -52,7 +52,7 @@ export const ProductsListLoader = async ({ request, params }) => {
   };
  
   const requestP = await fetch(
-    `https://api.ebay.com/buy/browse/v1/item_summary/search?q=${
+    `https://api.ebay.com/buy/browse/v1/item_summary/seartch?q=${
       params.productsList
     }&limit=20&filter=price:[${setPriceRangs(
       params.productsList
@@ -69,7 +69,7 @@ export const ProductsListLoader = async ({ request, params }) => {
   );
 
   if (!requestP.ok) {
-    console.log("data not fetched");
+   throw json({errorCode: requestP.status})
   }
 
   const gottenData = await requestP.json();

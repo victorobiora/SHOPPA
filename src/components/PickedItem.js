@@ -1,6 +1,6 @@
 import classes from "../styles/PickedItem.module.css";
 import { fetchObject } from "../store/getToken";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData,json } from "react-router-dom";
 
 const PickedItem = (props) => {
   const item = useLoaderData();
@@ -39,7 +39,7 @@ export const loader = async ({ request, params }) => {
   );
 
   if (!getItem.ok) {
-    console.log("I didnt get the item");
+    throw json({errorCode: getItem.status})
   }
 
   const item = await getItem.json();
