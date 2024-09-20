@@ -12,7 +12,6 @@ const ErrorComponent = props => {
     }else {
         message = `We could not get this resource for you. sorry`
     }
-    console.log(errorStatusCode)
  return <section>
     <NavBar/>
     <div className={classes.errorComponentBody}>
