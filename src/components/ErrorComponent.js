@@ -10,7 +10,7 @@ const ErrorComponent = props => {
     }else if(errorStatusCode === 404){
        message= 'The resource you requested for was not found.'
     }else {
-        message = `We could not get this resource for you. sorry`
+        message = `We could not get this resource for you at this moment. sorry`
     }
  return <section>
     <NavBar/>
